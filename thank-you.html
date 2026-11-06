@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | OG Hub™</title>
+  <meta name="description" content="Thank you for booking a strategy call with OG Hub. We will be in touch shortly." />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#F1EFE3" />
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23C7F94E' stroke='%230A0A0A' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='900' fill='%230A0A0A' text-anchor='middle'%3EOG%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@1,500;1,600&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Tracking conversion fire -->
+  <script>
+    if (typeof fbq === 'function') fbq('track', 'Lead');
+    if (typeof gtag === 'function') gtag('event', 'generate_lead');
+  </script>
+
+  <style>
+    :root {
+      --paper: #F1EFE3;
+      --paper-2: #E7E3D5;
+      --ink: #0A0A0A;
+      --ink-soft: #3B3A34;
+      --muted: #6E6C62;
+      --lime: #C7F94E;
+      --card: #FCFBF6;
+      --shadow: 6px 6px 0 var(--ink);
+      --shadow-sm: 4px 4px 0 var(--ink);
+      --bd: 2px solid var(--ink);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.55;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .grid-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image: linear-gradient(rgba(10, 10, 10, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(10, 10, 10, 0.045) 1px, transparent 1px);
+      background-size: 72px 72px
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: auto;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      padding: 40px 0
+    }
+
+    .card {
+      background: var(--card);
+      border: var(--bd);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 3rem 2.6rem;
+      text-align: center;
+    }
+
+    .icon-wrap {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--lime);
+      border: var(--bd);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .icon-wrap svg {
+      width: 36px;
+      height: 36px;
+      stroke: var(--ink);
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      stroke-linejoin: round
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: 'Space Mono', monospace;
+      font-size: .74rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: .4rem .8rem;
+      border: var(--bd);
+      border-radius: 4px;
+      background: var(--lime);
+      margin-bottom: 1rem
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1
+    }
+
+    h1 .serif-i {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 500
+    }
+
+    .msg {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      margin-top: 1.2rem;
+      line-height: 1.6
+    }
+
+    .lead-summary {
+      margin: 1.8rem auto;
+      padding: 1.2rem 1.4rem;
+      background: var(--paper-2);
+      border: var(--bd);
+      border-radius: 8px;
+      text-align: left;
+      font-size: .95rem;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .lead-summary b {
+      color: var(--ink)
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2.2rem;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .6rem;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 1.6rem;
+      border: var(--bd);
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      transition: all .15s;
+      line-height: 1;
+    }
+
+    .btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow)
+    }
+
+    .btn-lime {
+      background: var(--lime);
+      color: var(--ink)
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: var(--paper)
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px
+    }
+
+    .foot {
+      text-align: center;
+      font-family: 'Space Mono', monospace;
+      font-size: .76rem;
+      color: var(--muted);
+      position: relative;
+      z-index: 1
+    }
+
+    @media(max-width:600px) {
+      .card {
+        padding: 2rem 1.4rem
+      }
+
+      .btn {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-bg"></div>
+
+  <div class="wrap">
+    <div class="card">
+      <a href="index.html" style="display:inline-block;margin-bottom:1.6rem">
+        <img src="assets/oghub-logo-light-bg.png" alt="OG Hub Logo" style="height:46px;width:auto;display:block;margin:0 auto;object-fit:contain" />
+      </a>
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <path d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="chip">Submission Received</div>
+      <h1>We got your details,<br><span class="serif-i" id="nameTarget">Founder!</span></h1>
+      <p class="msg">
+        Your strategy call request has been sent straight to <b>oghub.in@gmail.com</b>.
+        Ashutosh Mishra will personally review your brand and get back to you within 24 hours.
+      </p>
+
+      <div class="lead-summary" id="summaryBox" style="display:none">
+        <div id="brandRow" style="display:none"><b>Brand / Website:</b> <span id="brandVal"></span></div>
+        <div id="creatorsRow" style="display:none"><b>Creators Required:</b> <span id="creatorsVal"></span></div>
+        <div id="nicheRow" style="display:none"><b>Target Niche:</b> <span id="nicheVal"></span></div>
+        <div><b>Confirmation Email:</b> <span id="emailVal"></span></div>
+        <div><b>Direct Mobile:</b> <span id="phoneVal"></span></div>
+      </div>
+
+      <div class="actions">
+        <a href="https://wa.me/919111756648?text=Hi%20Ashutosh,%20I%20just%20submitted%20the%20OG%20Hub%20strategy%20call%20form."
+          target="_blank" rel="noopener" class="btn btn-lime" id="waBtn">
+          Chat on WhatsApp: +91 9111756648 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.4">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/oghub.in" target="_blank" rel="noopener" class="btn btn-dark">
+          Instagram: @oghub.in ↗
+        </a>
+        <a href="index.html" class="btn" style="background:var(--paper);color:var(--ink)">
+          Return to Homepage
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    © 2026 OG Hub™ · Ashutosh Mishra · MSME Registered · <a href="https://www.instagram.com/oghub.in" target="_blank" rel="noopener" style="color:inherit">Instagram</a>
+  </footer>
+
+  <script>
+    try {
+      var raw = sessionStorage.getItem('ogLead');
+      if (raw) {
+        var lead = JSON.parse(raw);
+        if (lead.name) {
+          document.getElementById('nameTarget').textContent = lead.name + '!';
+        }
+        if (lead.email || lead.phone || lead.creators || lead.niche || lead.site) {
+          document.getElementById('summaryBox').style.display = 'block';
+          if (lead.site) {
+            document.getElementById('brandRow').style.display = 'block';
+            document.getElementById('brandVal').textContent = lead.site;
+          }
+          if (lead.creators) {
+            document.getElementById('creatorsRow').style.display = 'block';
+            document.getElementById('creatorsVal').textContent = lead.creators;
+          }
+          if (lead.niche) {
+            document.getElementById('nicheRow').style.display = 'block';
+            document.getElementById('nicheVal').textContent = lead.niche;
+          }
+          document.getElementById('emailVal').textContent = lead.email || '—';
+          document.getElementById('phoneVal').textContent = lead.phone || '—';
+
+          // Personalize WhatsApp prefilled message
+          var waBtn = document.getElementById('waBtn');
+          if (waBtn) {
+            var msg = "Hi Ashutosh! I just booked a strategy call on OG Hub." +
+              (lead.name ? "\nName: " + lead.name : "") +
+              (lead.niche ? "\nNiche: " + lead.niche : "") +
+              (lead.creators ? "\nCreators Needed: " + lead.creators : "") +
+              (lead.phone ? "\nPhone: " + lead.phone : "");
+            waBtn.href = "https://wa.me/919111756648?text=" + encodeURIComponent(msg);
+          }
+        }
+      }
+    } catch (e) { }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "oghub-website",
+  "version": "1.0.0",
+  "description": "OG Hub - Results-Driven Influencer Marketing Agency founded by Ashutosh Mishra",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "influencer-marketing",
+    "agency",
+    "oghub",
+    "ashutosh-mishra"
+  ],
+  "author": "Ashutosh Mishra <oghub.in@gmail.com>",
+  "license": "ISC"
+}
