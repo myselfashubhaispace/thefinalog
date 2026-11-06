@@ -440,7 +440,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1.25fr .75fr;
       gap: 2.5rem;
       align-items: start
     }
@@ -452,7 +452,9 @@
       margin-bottom: 1.5rem
     }
 
-   /* ONLY HERO MAIN HEADING */
+
+    
+    /* ONLY HERO MAIN HEADING */
 .hero-left > .hero-title {
   font-size: clamp(3.8rem, 6vw, 6.5rem);
   font-weight: 700;
@@ -482,6 +484,8 @@
   }
 }
 
+
+    
     .hero h1 .hl {
       position: relative;
       display: inline-block;
@@ -1919,8 +1923,8 @@
       }
 
       .hero h1 {
-        font-size: clamp(3.1rem, 7.2vw, 4.4rem);
-        line-height: 1
+        font-size: clamp(3.5rem, 8.2vw, 4.9rem);
+        line-height: 0.96
       }
 
       .review-grid {
@@ -2025,7 +2029,7 @@
       }
 
       .hero h1 {
-        font-size: clamp(2.45rem, 10.8vw, 3.5rem);
+        font-size: clamp(2.65rem, 11.6vw, 3.65rem);
         line-height: 0.96;
         letter-spacing: -0.055em;
       }
@@ -2249,7 +2253,7 @@
       }
 
       .hero h1 {
-        font-size: clamp(2.2rem, 10.4vw, 2.5rem);
+        font-size: clamp(2.35rem, 11vw, 2.65rem);
         line-height: 0.96;
         letter-spacing: -0.055em;
       }
@@ -2402,16 +2406,12 @@
             <span class="chip lime">+ hub of OG creators to scale your brands</span>
             <span class="chip paper">+ MSME REGISTERED</span>
           </div>
-
           
-
 <h1 class="reveal hero-title" data-d="1">
   <span class="hl">Turn Influence,</span><br>
   <span class="serif-i">into real ROI.</span>
 </h1>
-
-
-
+          
           <p class="lead reveal" data-d="2">We connect ambitious brands with vetted creators to drive <b>predictable
               revenue and authentic acquisition</b>. Not just vanity impressions.</p>
 
@@ -3302,33 +3302,6 @@
         });
       });
     })();
-  </script>
-  <script>
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        var winW = window.innerWidth;
-        var bad = [];
-        document.querySelectorAll('body *').forEach(function (el) {
-          if (el.closest('.logos')) return;
-          var r = el.getBoundingClientRect();
-          if (r.right > winW + 2) {
-            var id = el.id ? '#' + el.id : '';
-            var cls = el.className && typeof el.className === 'string' ? '.' + el.className.trim().split(/\s+/)[0] : '';
-            bad.push({
-              tag: el.tagName + id + cls,
-              w: Math.round(r.width),
-              r: Math.round(r.right),
-              text: (el.innerText || '').slice(0, 30).trim()
-            });
-          }
-        });
-        fetch('/api/diag', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ winW: winW, docW: document.documentElement.scrollWidth, bad: bad })
-        }).catch(function () {});
-      }, 300);
-    });
   </script>
 </body>
 
